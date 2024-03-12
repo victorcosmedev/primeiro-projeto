@@ -1,69 +1,115 @@
 <!-- Este é um comentário HTMl-->
-<!DOCTYPE HTML> <!-- Esse é o DTD do HTML5. -->
+<!DOCTYPE html>
+<!-- Esse é o DTD do HTML5. -->
 <!-- O DTD é o Document Type Definition, ele diz ao browse a versão do HTML que deve ser carregada.-->
 
-<html lang="pt-br"> <!-- Aqui estamos definindo a linguagem do nosso site para portugês brasileiro - útil em caso de recursos de tradução como Google Translate-->
-	<!-- primeiro filho do HTMl. head -->
-	<head>
-		<!--Tags de meta-dados, filhas do head. meta -->
-		<meta charset="UTF-8"/> <!-- Tag de caracteres latinos-->
+<html lang="pt-br">
+  <!-- Aqui estamos definindo a linguagem do nosso site para portugês brasileiro - útil em caso de recursos de tradução como Google Translate-->
+  <!-- primeiro filho do HTMl. head -->
+  <head>
+    <!--Tags de meta-dados, filhas do head. meta -->
+    <meta charset="UTF-8" />
+    <!-- Tag de caracteres latinos-->
 
-		<!-- A viewport faz parte da responsividade da página. -->
-		<meta name="viewport" content="width:device-width, initial-scale=1.0"/>
-		<title>Página Básica</title>
-	</head>
-	<!-- segundo filho do HTMl. body -->
-	<body>
-		<div class="container">
-			
-			<header class="cabecalho">
-				<h1 style="text-align: center; border: solid 2px #ff0000;">Minha Página</h1>
-				<nav>
+    <!-- A viewport faz parte da responsividade da página. -->
+    <meta name="viewport" content="width:device-width, initial-scale=1.0" />
+    <title>Página Básica</title>
+  </head>
+  <!-- segundo filho do HTMl. body -->
+  <body>
+    <div class="container">
+      <header class="cabecalho">
+        <h1 style="text-align: center; border: solid 2px #ff0000">
+          Minha Página
+        </h1>
+        <nav>
+          <ul>
+            <!-- Dentro da UL só pode LI-->
+            <li><a href="#">Ajuda</a></li>
+            <!--Dentro da LI é recomendado ter a tag <a>-->
+            <li><a href="#">Sobre</a></li>
+            <!-- tag <a> precisa de atributos, nesse caso href-->
+            <li><a href="#">Contato</a></li>
+            <!--Link azul: não visitado; link roxo: visitado. -->
+          </ul>
+        </nav>
+      </header>
 
-					<ul><!-- Dentro da UL só pode LI-->
-						<li><a href="#">Ajuda</a></li><!--Dentro da LI é recomendado ter a tag <a>-->
-						<li><a href="#">Sobre</a></li><!-- tag <a> precisa de atributos, nesse caso href-->
-						<li><a href="#">Contato</li> <!--Link azul: não visitado; link roxo: visitado. -->
-					</ul>
+      <!--header>nav>ul>li*3>a[href=#]{Item - $}-->
 
-				</nav>
+      <section class="conteudo"> <!-- Class = identificação-->
+        <div>
+          <h2>Ajuda</h2>
+          <p>
+            <span>AJUDA</span> - Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Cum ad aperiam earum ut ipsa perferendis
+            laboriosam laborum reiciendis error facere, veniam officia natus
+            ipsam. Reiciendis dolorem, cupiditate unde corporis fugit deleniti
+            doloremque! Placeat dolorem sunt dolorum veritatis qui fuga. Eos,
+            nemo eveniet nisi eius odio laboriosam ut cupiditate quo nobis
+            quisquam earum repellendus vitae nihil beatae officiis aut atque cum
+            architecto fugit aliquam tenetur! Est, voluptate illum! Consectetur
+            tenetur aperiam eum eaque esse, officiis voluptates praesentium
+            perferendis voluptatem sequi consequatur minus error fuga tempore
+            odio. Excepturi doloremque debitis laudantium atque voluptates
+            corporis cum! Nemo ipsum blanditiis quae facere, sunt id.
+          </p>
+          <a href="#">Mais...</a>
+        </div>
+        <div>
+          <h2>Sobre</h2>
+          <p>
+            <span>SOBRE</span> - Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Cum ad aperiam earum ut ipsa perferendis
+            laboriosam laborum reiciendis error facere, veniam officia natus
+            ipsam. Reiciendis dolorem, cupiditate unde corporis fugit deleniti
+            doloremque! Placeat dolorem sunt dolorum veritatis qui fuga. Eos,
+            nemo eveniet nisi eius odio laboriosam ut cupiditate quo nobis
+            quisquam earum repellendus vitae nihil beatae officiis aut atque cum
+            architecto fugit aliquam tenetur! Est, voluptate illum! Consectetur
+            tenetur aperiam eum eaque esse, officiis voluptates praesentium
+            perferendis voluptatem sequi consequatur minus error fuga tempore
+            odio. Excepturi doloremque debitis laudantium atque voluptates
+            corporis cum! Nemo ipsum blanditiis quae facere, sunt id.
+          </p>
+          <a href="#">Mais...</a>
+        </div>
+        <div>
+          <h2>Contato</h2>
+          <form>
+            <fieldset>
+              <!-- Subdivisão dentro do form-->
+              <legend>Contato</legend>
+              <div>
+                <label for="idEmail">Email</label>
+                <!-- atributo for recebe o valor do id do input -->
+                <input type="email" name="txtEmail" id="idEmail" placeholder="Digite seu e-mail"/>
+              </div>
+              <div>
+                <label for="idTel">Telefone</label>
+                <!-- atributo for recebe o valor do id do input -->
+                <input type="tel" name="txtTel" id="idTel" placeholder="Digite seu telefone"/>
+              </div>
+              <div>
+                <button type="button">Enviar</button>
+              </div>
+            </fieldset>
+          </form>
+        </div>
+      </section>
 
-			</header>
+      <footer class="rodape">
+		<!--nav>ul>li*3>a[href="#"]{Item - $}-->
+		<nav class="menu">
+			<ul>
+				<li><a href="#">FIAP</a></li>
+				<li><a href="#">GOOGLE</a></li>
+				<li><a href="#">Github</a></li>
+			</ul>
+		</nav>
 
-			<section>
-				<div>
-					<h2>Ajuda</h2>
-					<p><span>AJUDA</span> - Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum ad aperiam earum ut ipsa perferendis laboriosam laborum reiciendis error facere, veniam officia natus ipsam. Reiciendis dolorem, cupiditate unde corporis fugit deleniti doloremque! Placeat dolorem sunt dolorum veritatis qui fuga. Eos, nemo eveniet nisi eius odio laboriosam ut cupiditate quo nobis quisquam earum repellendus vitae nihil beatae officiis aut atque cum architecto fugit aliquam tenetur! Est, voluptate illum! Consectetur tenetur aperiam eum eaque esse, officiis voluptates praesentium perferendis voluptatem sequi consequatur minus error fuga tempore odio. Excepturi doloremque debitis laudantium atque voluptates corporis cum! Nemo ipsum blanditiis quae facere, sunt id.</p>
-					<a href="#">Mais...</a>
-				</div>
-				<div>
-					<h2>Sobre</h2>
-					<p><span>SOBRE</span> - Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum ad aperiam earum ut ipsa perferendis laboriosam laborum reiciendis error facere, veniam officia natus ipsam. Reiciendis dolorem, cupiditate unde corporis fugit deleniti doloremque! Placeat dolorem sunt dolorum veritatis qui fuga. Eos, nemo eveniet nisi eius odio laboriosam ut cupiditate quo nobis quisquam earum repellendus vitae nihil beatae officiis aut atque cum architecto fugit aliquam tenetur! Est, voluptate illum! Consectetur tenetur aperiam eum eaque esse, officiis voluptates praesentium perferendis voluptatem sequi consequatur minus error fuga tempore odio. Excepturi doloremque debitis laudantium atque voluptates corporis cum! Nemo ipsum blanditiis quae facere, sunt id.</p>
-					<a href="#">Mais...</a>
-				</div>
-				<div>
-					<h2>Contato</h2>
-					<form>
-						<fieldset> <!-- Subdivisão dentro do form-->
-							<legend>Contato</legend>
-							<div>
-								<label for="idEmail">Email</label> <!-- atributo for recebe o valor do id do input -->
-								<input type="email" name="txtEmail" id="idEmail" placeholder="Digite seu e-mail">
-							</div>
-							<div>
-								<label for="idTel">Telefone</label> <!-- atributo for recebe o valor do id do input -->
-								<input type="tel" name="txtTel" id="idTel" placeholder="Digite seu telefone">
-							</div>
-							<div>
-								<button type="button">Enviar</button>
-							</div>
-						</fieldset>
-					</form>
-				</div>
-
-			</section>
-
-			<!--header>nav>ul>li*3>a[href=#]{Item - $}-->
-		</div>
-	</body>
+		<p>Todos os direitos reservados &copy; 2024 - Minha Página</p>
+	  </footer>
+    </div>
+  </body>
 </html>
