@@ -25,11 +25,11 @@
         <nav>
           <ul>
             <!-- Dentro da UL só pode LI-->
-            <li><a href="#">Ajuda</a></li>
+            <li><a href="./paginas/ajuda.html">Ajuda</a></li>
             <!--Dentro da LI é recomendado ter a tag <a>-->
-            <li><a href="#">Sobre</a></li>
+            <li><a href="./paginas/sobre.html">Sobre</a></li>
             <!-- tag <a> precisa de atributos, nesse caso href-->
-            <li><a href="#">Contato</a></li>
+            <li><a href="#contato">Contato</a></li>
             <!--Link azul: não visitado; link roxo: visitado. -->
           </ul>
         </nav>
@@ -57,6 +57,7 @@
           </p>
           <a href="#">Mais...</a>
         </div>
+
         <div>
           <h2>Sobre</h2>
           <p>
@@ -76,14 +77,15 @@
           <a href="#">Mais...</a>
         </div>
 
-        <div>
+        <div id="contato">
           <h2>Contato</h2>
           <form>
             <fieldset>
-              <!-- Pensar como se fosse todo o formulário -->
+              <!-- Fieldset - pensar como se fosse todo o formulário -->
               <!-- Subdivisão dentro do form-->
-              <legend>Contato</legend>
               <!-- Legend é o título do formulário -->
+              <legend>Contato</legend>
+
               <div>
                 <label for="idEmail">Email</label>
                 <!-- atributo for recebe o valor do id do input -->
