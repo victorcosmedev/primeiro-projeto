@@ -3,6 +3,7 @@
 ## _Prof.Alexandre_ : alecarlosjesus
 
 # INFO
-- github -  
-- nome -
+- github -  https://github.com/victorcosmedev
+- nome - Victor Nascimento Cosme
+- curso = Análise e Desenvolvimento de Sistemas - FIAP - 1TDSPY
   
