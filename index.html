@@ -22,14 +22,15 @@
         <h1 style="text-align: center; border: solid 2px #ff0000">
           Minha Página
         </h1>
-        <nav>
+        <nav class="menu">
           <ul>
             <!-- Dentro da UL só pode LI-->
-            <li><a href="./paginas/ajuda.html">Ajuda</a></li>
+            <!-- atributo alt do a é tag de acessibilidade - usada para descrição via voz para deficientes visuais-->
+            <li><a href="./paginas/ajuda.html"><img src="./img/question.png" alt="Interrogação dentro do círculo" width="5%"></a></li>
             <!--Dentro da LI é recomendado ter a tag <a>-->
-            <li><a href="./paginas/sobre.html">Sobre</a></li>
+            <li><a href="./paginas/sobre.html"><img src="./img/about.png" alt="Letra I dentro de um círculo" width="5%"></a></li>
             <!-- tag <a> precisa de atributos, nesse caso href-->
-            <li><a href="#contato">Contato</a></li>
+            <li><a href="#"><img src="./img/contact.png" alt="Telefone fixo" width="5%"></a></li>
             <!--Link azul: não visitado; link roxo: visitado. -->
           </ul>
         </nav>

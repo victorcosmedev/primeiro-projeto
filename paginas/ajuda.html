@@ -6,6 +6,24 @@
     <title>AJUDA</title>
   </head>
   <body>
-    <h1>AJUDA</h1>
+    <div class="container">
+      <header class="cabecalho">
+        <h1 style="text-align: center; border: solid 2px #ff0000">
+          Ajuda
+        </h1>
+        <nav class="menu">
+          <ul>
+            <!-- Dentro da UL só pode LI-->
+            <!-- atributo alt do a é tag de acessibilidade - usada para descrição via voz para deficientes visuais-->
+            <li><a href="../index.html"><img src="../img/home.png" alt="Casa" width="5%"></a></li>
+            <!--Dentro da LI é recomendado ter a tag <a>-->
+            <li><a href="./sobre.html"><img src="../img/about.png" alt="Letra I dentro de um círculo" width="5%"></a></li>
+            <!-- tag <a> precisa de atributos, nesse caso href-->
+            <li><a href="#"><img src="../img/contact.png" alt="Telefone fixo" width="5%"></a></li>
+            <!--Link azul: não visitado; link roxo: visitado. -->
+          </ul>
+        </nav>
+      </header>
+    </div>
   </body>
 </html>
